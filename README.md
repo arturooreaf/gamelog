@@ -1,16 +1,19 @@
-# Praderas Manager
+# GameLog
 
-Backend API for managing volunteers and activities at Las Praderas NGO.
+A backend REST API to track your video game collection — like a personal Backloggd.
 
 ## Domain model
 
-- **Volunteer** — a person who collaborates with the NGO
-- **Activity** — something the NGO organizes
-- **Shift** — a specific time slot for an activity
-- **Enrollment** — a volunteer signing up for a shift
-- **Attendance** — whether a volunteer actually showed up
+- **User** — a player (with USER or ADMIN role)
+- **Developer** — the studio that makes a game (FromSoftware, Nintendo...)
+- **Game** — a video game in the catalog (title, release year, developer)
+- **Playthrough** — a user's record of playing a game (status, hours, dates)
+- **Review** — a user's review and rating of a game they've played
 
 ## Tech stack
 
-Java 21 · Spring Boot 3 · PostgreSQL · Docker
+Java 21 · Spring Boot 3 · PostgreSQL · Docker · JWT
 
+## Status
+
+🚧 Work in progress — started June 2026
