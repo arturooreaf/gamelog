@@ -1,10 +1,12 @@
-import Clases.Game;
+import clases.Developer;
+import clases.Game;
+import enumerados.GameStatus;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-Game game1 = new Game ("Zelda",1998);
+    Developer dev1 = new Developer("From Software", 1986);
+
+Game game1 = new Game ("Dark Souls",2011,dev1, GameStatus.COMPLETED);
     System.out.println(game1);
+
 }
