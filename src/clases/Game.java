@@ -15,6 +15,22 @@ public class Game {
         return title;
     }
 
+    public Developer getDeveloper() {
+        return developer;
+    }
+
+    public void setDeveloper(Developer developer) {
+        this.developer = developer;
+    }
+
+    public GameStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(GameStatus status) {
+        this.status = status;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -30,7 +46,7 @@ public class Game {
     //endregion
 //region Constructores
     public Game(String title, int releaseYear, Developer developer, GameStatus status) {
-        if (releaseYear < 0 || releaseYear >= 2050) {
+        if (releaseYear < 1958 || releaseYear >= 2050) {
             throw new IllegalArgumentException("The game must have been released in a positive year");
         }
         if (title == null || title.isBlank()) {
