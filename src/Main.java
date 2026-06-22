@@ -1,5 +1,6 @@
 import clases.Developer;
 import clases.Game;
+import clases.Playthrough;
 import clases.User;
 import enumerados.GameStatus;
 
@@ -11,4 +12,7 @@ Game game1 = new Game ("Dark Souls",2011,dev1, GameStatus.COMPLETED);
     System.out.println(game1);
     System.out.println(user1);
     System.out.println(dev1);
+    Playthrough play1 = new Playthrough(user1, game1,GameStatus.COMPLETED, 50.9);
+
+    System.out.println(play1);
 }
