@@ -1,1 +1,2 @@
-- [ ] Crear Review.java con user, game, rating (1-10) y comment
+- [x] Semana 1: Dominio completo (Game, Developer, User, Playthrough, Review)
+- [ ] Mañana: Semana 2 - Herencia, clase abstracta CatalogItem
