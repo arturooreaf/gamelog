@@ -59,12 +59,9 @@ public class User {
         if (password == null || password.isBlank()) {
             throw new IllegalArgumentException("The password cannot null or blank");
         }
-        if (password.length() >= 8 && password.length() <= 15) {
-
-        } else {
+        if (password.length() < 8 || password.length() > 15) {
             throw new IllegalArgumentException("The password need min 8 characters and max 15");
         }
-
     }
 
     private void validateUsername(String username) {
