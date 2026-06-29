@@ -14,4 +14,9 @@ Game game1 = new Game ("Dark Souls",2011,dev1, GameStatus.COMPLETED);
     System.out.println(play1);
     Review review1 = new Review(user1,game1,8, "Good",LocalDate.now());
     System.out.println(review1);
+
+    InMemoryGameRepository memory= new InMemoryGameRepository();
+    memory.save(game1);
+    List<Game>all = memory.findAll();
+    System.out.println(all);
 }
