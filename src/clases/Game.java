@@ -1,6 +1,6 @@
 package clases;
 
-import enumerados.GameStatus;
+
 
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ public class Game extends CatalogItem {
 
 
     private Developer developer;
-    private GameStatus status;
+
     private static int idNext;
     private int id;
 
@@ -47,27 +47,20 @@ public class Game extends CatalogItem {
         this.developer = developer;
     }
 
-    public GameStatus getStatus() {
-        return status;
-    }
 
-    public void setStatus(GameStatus status) {
-        validateStatus(status);
-        this.status = status;
-    }
 
 
 
     //endregion
 //region Constructor
-    public Game(String title, int releaseYear, Developer developer, GameStatus status) {
+    public Game(String title, int releaseYear, Developer developer) {
         super(title, releaseYear);
-        validateStatus(status);
+
         validateDeveloper(developer);
         idNext = idNext+1;
         id = idNext;
         this.developer = developer;
-        this.status = status;
+
     }
 
 
@@ -81,7 +74,6 @@ public class Game extends CatalogItem {
                 "title ="+ getTitle() +
                 ", releaseYear="+getReleaseYear() +
                 ", developer=" + developer +
-                ", status=" + status +
                 '}';
     }
     @Override
@@ -98,9 +90,6 @@ public class Game extends CatalogItem {
 
     //endregion
 
-private void validateStatus(GameStatus status){
-    if (status == null) throw new IllegalArgumentException("status cannot null ");
-}
     private void validateDeveloper(Developer developer) {
         if (developer == null) throw new IllegalArgumentException("developer cannot null ");
     }
