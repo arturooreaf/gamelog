@@ -22,17 +22,21 @@ public class InMemoryGameRepository implements GameRepository {
         return null;
 
 
+    }
 
-}
+    @Override
+    public List<Game> findAll() {
+        return games;
+    }
 
-@Override
-public List<Game> findAll() {
-    return games;
-}
-
-@Override
-public void delete(int id) {
-
-}
+    @Override
+    public void delete(int id) {
+        for (Game game : games) {
+            if (game.getId() == id) {
+                 games.remove(game);
+                 return;
+            }
+        }
+    }
 
 }
