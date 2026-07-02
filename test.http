@@ -1,0 +1,7 @@
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "title": "Elden Ring",
+  "releaseYear": 2022
+}
