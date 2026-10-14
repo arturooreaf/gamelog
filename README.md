@@ -2,6 +2,8 @@
 
 A backend REST API to track your video game collection, like a personal [Backloggd](https://backloggd.com).
 
+[![CI](https://github.com/arturooreaf/gamelog/actions/workflows/ci.yml/badge.svg)](https://github.com/arturooreaf/gamelog/actions/workflows/ci.yml)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Java](https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.5-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
