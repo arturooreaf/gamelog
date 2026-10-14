@@ -1,4 +1,4 @@
-package test;
+package com.arturooreaf.gamelog.clases;
 
 import com.arturooreaf.gamelog.clases.User;
 import org.junit.jupiter.api.Test;
